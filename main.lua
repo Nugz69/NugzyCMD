@@ -10,3 +10,9 @@ local celf = GUI:Tab{
 	Name = "Self",
 	Icon = "rbxassetid://8569322835"
 }
+
+celf:button({
+
+    Name = "Modify",
+
+})
