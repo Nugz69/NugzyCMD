@@ -14,5 +14,18 @@ local celf = GUI:Tab{
 celf:button({
 
     Name = "Modify",
+    Callback = function()
+        celf:prompt{
 
+            Title = "GodMode",
+            Text = "Make yourself invincible",
+            Buttons = {
+
+                Ok = function()
+
+                end
+            }
+        
+        }
+    end
 })
