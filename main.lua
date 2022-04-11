@@ -1,6 +1,6 @@
 local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
 local plyr = game:GetService("Players").LocalPlayer
-
+getgenv().godO = true
 
 local GUI = Mercury:Create{
     Name = "NugzyCMD",
@@ -20,9 +20,12 @@ celf:Toggle({
     Description = "Makes yourself invincible",
     Callback = function(bool)
 
+        getgenv().godO = bool 
+
         if bool then
             
             godMode(plyr);
+            
             celf:Notification{
 
                 Title = "ALERT" , 
@@ -34,6 +37,18 @@ celf:Toggle({
 
         end
 
+    end
+
+})
+
+celf:Toggle({
+
+    Name = "Fly",
+    StartingState = false,
+    Description = "Fly like a champ!",
+    Callback = function(bool)
+
+        
     end
 
 })
