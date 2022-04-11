@@ -43,8 +43,12 @@ celf:Toggle({
     Name = "Fly",
     StartingState = false,
     Description = "Fly like a champ!",
-    Callback = function(bool)
+    Callback = function()
 
+        if plyr.Character then 
+
+        loadstring(game:HttpGet("https://pastebin.com/raw/7rXZ9VNc", true))()
+        end 
         
     end
 
