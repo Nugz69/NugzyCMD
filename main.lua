@@ -47,7 +47,7 @@ celf:Toggle({
 menu:color_picker({
 
     Name = "Menu's Color",
-    Style = Mercury.CColorPickerStyles.legacy,
+    Style = Mercury.CColorPickerStyles.Legacy,
     Callback = function(color)
         print(color)
     end,
