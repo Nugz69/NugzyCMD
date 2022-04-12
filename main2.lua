@@ -23,13 +23,6 @@ ss:Toggle("GodMode",function(t)
     
 
 end)
-ss:Toggle("Fly",function(t)
-
-    loadstring(game:HttpGet('https://pastebin.com/raw/d32zM888'))();
-
-
-end)
-
 
 --ss:Button("Button",function()
 --print("Pressed!")
