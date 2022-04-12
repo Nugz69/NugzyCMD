@@ -33,6 +33,20 @@ ss:Toggle("Fly" , function(t)
 
 end)
 
+ss:Slider("WalkSpeed",0,100,70,function(t) 
+
+    local plr  = game.Players.LocalPlayer
+
+    if plr.Character then
+    
+        Character.Humanoid.WalkSpeed = t 
+        print(t)
+
+    end 
+
+
+end)
+
 --ss:Button("Button",function()
 --print("Pressed!")
 --end)
