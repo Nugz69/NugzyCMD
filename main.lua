@@ -48,6 +48,7 @@ menu:color_picker({
 
     Name = "Menu's Color",
     Style = Mercury.CColorPickerStyles.Legacy,
+    Description = "Adjust Color" , 
     Callback = function(color)
         print(color)
     end,
