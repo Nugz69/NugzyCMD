@@ -11,6 +11,12 @@ local celf = GUI:Tab{
 	Name = "Self",
 	Icon = "rbxassetid://8569322835"
 }
+local menu = GUI:Tab{
+
+    Name = "Menu",
+    Icon = "rbxassetid://80373024"
+
+}
 
 celf:Toggle({
     
@@ -38,19 +44,13 @@ celf:Toggle({
 
 })
 
-celf:Toggle({
+menu:color_picker({
 
-    Name = "Fly",
-    StartingState = false,
-    Description = "Fly like a champ!",
-    Callback = function()
-
-        if plyr.Character then 
-
-        loadstring(game:HttpGet("https://pastebin.com/raw/7rXZ9VNc", true))()
-        end 
-        
-    end
+    Name = "Menu's Color",
+    Style = Mercury.CColorPickerStyles.legacy,
+    Callback = function(color)
+        print(color)
+    end,
 
 })
 
